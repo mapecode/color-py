@@ -45,6 +45,10 @@ Reversed = '\u001b[7m'
 
 
 def print_colors_code():
+    """
+    Print 256-color codes
+    :return: None
+    """
     for i in range(0, 16):
         for j in range(0, 16):
             code = str(i * 16 + j)
@@ -53,16 +57,33 @@ def print_colors_code():
 
 
 def color_by_code(code):
+    """
+    Return the color about the code
+    Example: print(color_by_code(11)+mapecode)
+
+    :param code: 256-color code
+    :return: the color
+    """
     code = str(code)
     return u"\u001b[38;5;" + code + "m "
 
 
 def random_color():
+    """
+    Return a random color
+    Example: print(random_color()+mapecode)
+
+    :return: random color
+    """
     from random import randint
     return color_by_code(randint(0, 255))
 
 
 def print_background_colors_code():
+    """
+    Print 256-color codes for the background
+    :return: None
+    """
     for i in range(0, 16):
         for j in range(0, 16):
             code = str(i * 16 + j)
@@ -71,11 +92,24 @@ def print_background_colors_code():
 
 
 def background_color_by_code(code):
+    """
+    Return the background color about the code
+    Example: print(background_color_by_code(11)+mapecode)
+
+    :param code: 256-color background code
+    :return: the background color
+    """
     code = str(code)
     return u"\u001b[48;5;" + code + "m"
 
 
 def random_background_color():
+    """
+    Return a random color for the background
+    Example: print(random_background_color()+mapecode)
+
+    :return: random background color
+    """
     from random import randint
     return background_color_by_code(randint(0, 255))
 
