@@ -59,7 +59,7 @@ def print_colors_code():
 def color_by_code(code):
     """
     Return the color about the code
-    Example: print(color_by_code(11)+mapecode)
+    Example: print(color_by_code(11)+'mapecode')
 
     :param code: 256-color code
     :return: the color
@@ -71,7 +71,7 @@ def color_by_code(code):
 def random_color():
     """
     Return a random color
-    Example: print(random_color()+mapecode)
+    Example: print(random_color()+'mapecode')
 
     :return: random color
     """
@@ -94,7 +94,7 @@ def print_background_colors_code():
 def background_color_by_code(code):
     """
     Return the background color about the code
-    Example: print(background_color_by_code(11)+mapecode)
+    Example: print(background_color_by_code(11)+'mapecode')
 
     :param code: 256-color background code
     :return: the background color
@@ -106,7 +106,7 @@ def background_color_by_code(code):
 def random_background_color():
     """
     Return a random color for the background
-    Example: print(random_background_color()+mapecode)
+    Example: print(random_background_color()+'mapecode')
 
     :return: random background color
     """
